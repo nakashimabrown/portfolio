@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Nankin Kanna</title>
+
+<!-- Inter Typeface -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+<style>
+
+body {
+  margin: 32px;
+  font-family: "Inter", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.55;
+  color: #000;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* ---------- GRID ---------- */
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+  margin-bottom: 72px;
+}
+
+/* ---------- FRAMES ---------- */
+
+.frame {
+  aspect-ratio: 1 / 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+/* ---------- VIDEO ---------- */
+
+.frame.video {
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  align-items: stretch;
+  justify-content: stretch;
+}
+
+.frame.video iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+/* span two columns for final video */
+.span-2 {
+  grid-column: 2 / span 2;
+}
+
+
+/* ---------- HEADER ---------- */
+
+.project-title {
+  grid-column: 2;
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+}
+
+.subtitle {
+  font-size: 0.75rem;
+  font-weight: 300;
+  margin-top: 6px;
+  opacity: 0.8;
+}
+
+.project-meta {
+  grid-column: 2;
+  text-align: center;
+  font-size: 0.8rem;
+  font-weight: 300;
+}
+
+.hero {
+  grid-column: 3;
+}
+
+.description {
+  grid-column: 3;
+  font-size: 0.85rem;
+  font-weight: 300;
+  text-align: right;
+}
+
+/* ---------- TEXT FRAMES ---------- */
+
+.frame.text-left,
+.frame.text-center,
+.frame.text-right {
+  padding: 14%;
+  font-size: 1.05rem;
+  font-weight: 300;
+  line-height: 1.55;
+}
+
+.text-left { text-align: left; }
+.text-center { text-align: center; }
+.text-right { text-align: right; }
+
+/* ---------- ARROWS (TEXT ONLY) ---------- */
+
+.arrow {
+  position: absolute;
+  font-size: 1rem;
+  font-weight: 300;
+  opacity: 0.35;
+  pointer-events: none;
+}
+
+/* horizontal */
+.arrow.left {
+  left: 8%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.arrow.right {
+  right: 8%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* vertical */
+.arrow.down {
+  bottom: 8%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* ---------- BACK ---------- */
+
+.back {
+  text-align: right;
+  margin-bottom: 48px;
+  font-size: 0.8rem;
+  font-weight: 300;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="back">
+  <a href="index.html">← back</a>
+</div>
+
+<!-- ---------- HEADER ---------- -->
+
+<section class="grid">
+
+  <div></div>
+
+  <div class="project-title frame">
+    <div>
+      Nankin Kanna
+      <div class="subtitle">Solo project <br> Inspired by the work of generations of craftspeople</div>
+    </div>
+  </div>
+
+  <div class="frame hero">
+    <img src="images/nankin-kanna.jpg" alt="Nankin Kanna">
+  </div>
+
+  <div></div>
+
+  <div class="project-meta frame">
+    Designed and built by<br>
+    Hugo Nakashima-Brown
+  </div>
+
+  <div class="frame description">
+    Oftentimes, the most efficent way to shape a curve is with the spokeshave. While metal spokeshaves can be bought, I prefer to make mine from scrap hardwood and bits of old high speed metal, usually from bent or broken sawblades.
+  </div>
+
+</section>
+
+<!-- ---------- PROCESS ---------- -->
+
+<section class="grid">
+
+  <!-- STEP 1 (right → left, arrows on text only) -->
+  <div class="frame">
+    <img src="images/nankin-kanna-round.jpg" alt="">
+  </div>
+
+  <div class="frame text-center">
+   For an exterior curve, a flat bottom is most efficent.
+  </div>
+
+  <div class="frame">
+    <img src="images/nankin-kanna-flat.jpg" alt="">
+  </div>
+
+  <!-- STEP 2 -->
+  <div class="frame text-left">
+   For interior curves, multiple shaves of varying radius, in this case 50mm, must be made. A brass throat helps prevent the radius from wearing to a different curve over thousands of hours of use.
+    <div class="arrow down">↓</div>
+  </div>
+
+  <div class="frame"></div>
+  <div class="frame"></div>
+
+  <!-- STEP 3 (left → right) -->
+  <div class="frame">
+    <img src="images/keiyaki-crest-shaving.jpg" alt="">
+  </div>
+
+  <div class="frame text-center">
+    And a chatter free, glassy, and beautifully textured surface of consistant radius can be achieved.
+   
+  </div>
+
+</section>
+
+</body>
+</html>

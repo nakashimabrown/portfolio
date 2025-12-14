@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Yuanjiaogui Cabinet</title>
+
+<!-- Inter Typeface -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+<style>
+
+body {
+  margin: 32px;
+  font-family: "Inter", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.55;
+  color: #000;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* ---------- GRID ---------- */
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+  margin-bottom: 72px;
+}
+
+/* ---------- FRAMES ---------- */
+
+.frame {
+  aspect-ratio: 1 / 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+/* ---------- HEADER ---------- */
+
+.project-title {
+  grid-column: 2;
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+}
+
+.subtitle {
+  font-size: 0.75rem;
+  font-weight: 300;
+  margin-top: 6px;
+  opacity: 0.8;
+}
+
+.project-meta {
+  grid-column: 2;
+  text-align: center;
+  font-size: 0.8rem;
+  font-weight: 300;
+}
+
+.hero {
+  grid-column: 3;
+}
+
+.description {
+  grid-column: 3;
+  font-size: 0.85rem;
+  font-weight: 300;
+  text-align: right;
+}
+
+/* ---------- TEXT FRAMES ---------- */
+
+.frame.text-left,
+.frame.text-center,
+.frame.text-right {
+  padding: 14%;
+  font-size: 1.05rem;
+  font-weight: 300;
+  line-height: 1.55;
+}
+
+.text-left { text-align: left; }
+.text-center { text-align: center; }
+.text-right { text-align: right; }
+
+/* ---------- Q&A ---------- */
+
+.qa {
+  font-size: 0.95rem;
+  line-height: 1.55;
+}
+
+.qa .q {
+  font-weight: 500;
+  margin-bottom: 0.35em;
+}
+
+.qa .a {
+  font-weight: 300;
+}
+
+.qa + .qa {
+  margin-top: 1.25em;
+}
+
+/* ---------- ARROWS ---------- */
+
+.arrow {
+  position: absolute;
+  font-size: 1rem;
+  font-weight: 300;
+  opacity: 0.35;
+  pointer-events: none;
+}
+
+.arrow.left {
+  left: 8%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.arrow.right {
+  right: 8%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.arrow.down {
+  bottom: 8%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* ---------- BACK ---------- */
+
+.back {
+  text-align: right;
+  margin-bottom: 48px;
+  font-size: 0.8rem;
+  font-weight: 300;
+}
+
+/* ---------- LINK ---------- */
+
+.interview-link {
+  font-size: 0.85rem;
+  font-weight: 300;
+  opacity: 0.7;
+}
+
+.interview-link a {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.inline-link {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+
+</style>
+</head>
+
+<body>
+
+<div class="back">
+  <a href="index.html">← back</a>
+</div>
+
+<section class="grid">
+
+  <div></div>
+
+  <div class="project-title frame">
+    <div>
+      Bretstuhl
+      <div class="subtitle">
+        Solo project<br>
+    Designed and built by<br>
+    Hugo Nakashima-Brown
+</div>
+    </div>
+  </div>
+
+  <div class="frame hero">
+    <img src="images/bretstuhl.gif" alt="George & Martha Washington Kissing Bench">
+  </div>
+
+  <div></div>
+
+  <div class="project-meta frame">
+    "Remaking Rembrandt" in Marquetry:<br>
+    Unscripted interview given during residency<br>
+    at the Penland School of Craft.
+  </div>
+
+  <div class="frame description">
+    <div class="qa">
+      <div class="q">Q: Was it your plan to create these heads during your residency?</div>
+      <div class="a">A: My big project was a marquetry door. It's like four feet by eight feet, for a client. And then I was kind of like, this is too fussy. So I did these after I finished it.</div>
+    </div>
+
+    
+  
+
+</section>
+
+<section class="grid">
+
+  <div class="frame">
+    <img src="images/elvis-front.jpg" alt="">
+  </div>
+
+  <div class="frame text-center">
+    <div class="qa">
+      <div class="q">Q: How did you get started on this path?</div>
+      <div class="a">A: Originally I did a chair. I was making a Brettstuhl, which is kind of a traditional folk form. I was interested in the idea of how people often do these very ornate carved backs, but if you look at the old ones, they're really just utilitarian, thrown together chairs. The joinery is not good. So I was like, what if I made it like a folk back, but the back was a piece of Americana that was very well crafted. So I did. That was the first marquetry thing I did. It's a chair with this very tight and complex joinery, but at the same time it's very basic.</div>
+    </div>
+    <div class="arrow left">←</div>
+  </div>
+
+  <div class="frame">
+    <img src="images/bretstuhl-joinery.jpg" alt="">
+  </div>
+
+  <div class="frame text-left">
+    <div class="qa">
+      <div class="q">Q: You consider this work basic?</div>
+      <div class="a">A: In a way, yes. The marquetry itself is not easy to do, right? Because there's all that short grain in there. It becomes very weak and it just wants to crumble. So it's about how do I take this drawing that's done on Photoshop in the stupidest way possible, but it nonetheless has some compelling aspects to it and then, take it and make it into art.</div>
+    </div>
+    <div class="arrow down">↓</div>
+  </div>
+
+  <div class="frame"></div>
+  <div class="frame"></div>
+
+  <div class="frame">
+    <img src="images/tina-process.jpg" alt="">
+  </div>
+
+  <div class="frame text-center">
+    <div class="qa">
+      <div class="q">Q: What kind of reactions have you gotten to this work?</div>
+      <div class="a">A: Oh, I love it because you either get really, really negative or really positive reactions. It’s one of the two. The negative reactions are like, “I fucking hate that thing. Get it out of here. It’s creepy.” I haven’t gotten so many negative reactions here at Penland. People at my furniture school were confused because I made that first chair while I was still in school at a traditional woodcraft school. People didn’t really know what to say because it was like a well-made period piece of furniture but it was also so odd to them to have the back be well-made as a work of marquetry but so crude as a drawing.</div>
+    </div>
+    <div class="arrow right">→</div>
+  </div>
+
+  <div class="frame">
+    <img src="images/elvis-back.jpg" alt="">
+  </div>
+
+  <div class="frame"></div>
+  <div class="frame"></div>
+
+  <div class="frame text-right">
+    <div class="qa">
+      <div class="q">Q: What tools are you using?</div>
+      <div class="a">A: So, normally I do them with the scroll saw. I’ve been experimenting because I can’t do them by hand if they’re too large, so I’ve been trying out using the 
+         <a
+  href="https://www.finewoodworking.com/2025/11/19/marquetry-with-the-shaper-origin?srsltid=AfmBOorbS70xbowQpUNBtVJWfiuofsbLFWQwnDi1ZUeSZRg9fTjOQ5pH"
+  target="_blank"
+  rel="noopener"
+  class="inline-link"
+>
+  CNC
+</a>
+ <br> and that worked quite well, so I might continue doing that.</div>
+    </div>
+    <div class="arrow down">↓</div>
+  </div>
+
+  <div class="frame">
+    <img src="images/tina-process-2.jpg" alt="">
+  </div>
+
+  <div class="frame text-center">
+    <div class="qa">
+      <div class="q">Q: It seems like contrast would be important?</div>
+      <div class="a">A: Exactly, because you have a limited color palette. You can get dyed veneers but I didn’t really have any here, so your pale tones are white, which would be holly. Skin tones could be walnut or cherry or maple. They’re all kinds of reds and yellows. In terms of the composition, there is that. That’s what I was kind of interested in. They are so simple as a drawing and the colors themselves are not complex. I’m not trying to make a realistic impression of something. I’m not that interested in marquetry as an abstract composition either. I think typical traditional applications of marquetry are either realism or they are patterns and geometry. I’m kind of interested in these geometric sort of shapes, but they’re nonetheless figurative.</div>
+    </div>
+    <div class="arrow left">←</div>
+  </div>
+
+  <div class="frame">
+    <img src="images/penland-heads.jpg" alt="">
+  </div>
+
+  <div class="frame text-left">
+    <div class="interview-link">
+      link to full interview:
+      <a href="https://penland.org/remaking-rembrandt-in-marquetry/" target="_blank" rel="noopener">https://penland.org/remaking-rembrandt-in-marquetry/</a>
+    </div>
+    <div class="arrow down">↓</div>
+  </div>
+
+  <div class="frame"></div>
+  <div class="frame"></div>
+
+</section>
+
+</body>
+</html>

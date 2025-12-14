@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Xiangji Table</title>
+
+<!-- Inter Typeface -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+<style>
+
+body {
+  margin: 32px;
+  font-family: "Inter", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.55;
+  color: #000;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* ---------- GRID ---------- */
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+  margin-bottom: 72px;
+}
+
+/* ---------- FRAMES ---------- */
+
+.frame {
+  aspect-ratio: 1 / 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+/* ---------- HEADER ---------- */
+
+.project-title {
+  grid-column: 2;
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+}
+
+.subtitle {
+  font-size: 0.75rem;
+  font-weight: 300;
+  margin-top: 6px;
+  opacity: 0.8;
+}
+
+.project-meta {
+  grid-column: 2;
+  text-align: center;
+  font-size: 0.8rem;
+  font-weight: 300;
+}
+
+.hero {
+  grid-column: 3;
+}
+
+.description {
+  grid-column: 3;
+  font-size: 0.85rem;
+  font-weight: 300;
+  text-align: right;
+}
+
+/* ---------- TEXT FRAMES ---------- */
+
+.frame.text-left,
+.frame.text-center,
+.frame.text-right {
+  padding: 14%;
+  font-size: 1.05rem;
+  font-weight: 300;
+  line-height: 1.55;
+}
+
+.text-left { text-align: left; }
+.text-center { text-align: center; }
+.text-right { text-align: right; }
+
+/* ---------- ARROWS (TEXT ONLY) ---------- */
+
+.arrow {
+  position: absolute;
+  font-size: 1rem;
+  font-weight: 300;
+  opacity: 0.35;
+  pointer-events: none;
+}
+
+/* horizontal */
+.arrow.left {
+  left: 8%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.arrow.right {
+  right: 8%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* vertical */
+.arrow.down {
+  bottom: 8%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* ---------- BACK ---------- */
+
+.back {
+  text-align: right;
+  margin-bottom: 48px;
+  font-size: 0.8rem;
+  font-weight: 300;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="back">
+  <a href="index.html">← back</a>
+</div>
+
+<!-- ---------- HEADER ---------- -->
+
+<section class="grid">
+
+  <div></div>
+
+  <div class="project-title frame">
+    <div>
+      Xiangji Table
+      <div class="subtitle">Solo project</div>
+    </div>
+  </div>
+
+  <div class="frame hero">
+    <img src="images/xiangji.jpg" alt="Xiangji Table">
+  </div>
+
+  <div></div>
+
+  <div class="project-meta frame">
+    Designed and built by<br>
+    Hugo Nakashima-Brown
+  </div>
+
+  <div class="frame description">
+    This project examines the construction and of a 16th-century
+    Fujianese table entirely through production methods. How can evidently complex joinery, typically cut only by hand, be adapted to traditional shop methods.
+  </div>
+
+</section>
+
+<!-- ---------- PROCESS ---------- -->
+
+<section class="grid">
+
+  <!-- STEP 1 (right → left, arrows on text only) -->
+  <div class="frame">
+    <img src="images/xiangji-coopering-2.jpg" alt="">
+  </div>
+
+  <div class="frame text-center">
+    First, the apron was constructed as a coopered octagon with attached clamping blocks. The half-octagon was checked for accuracy of angle, then glued together as a whole.
+    <div class="arrow left">←</div>
+  </div>
+
+  <div class="frame">
+    <img src="images/xiangji-coopering-1.jpg" alt="">
+  </div>
+
+  <!-- STEP 2 -->
+  <div class="frame text-left">
+   Legs were profiled with the spindle molder using a single hold-down profling jig for a flush trim at the back and a radiused bit for the front. An overarm pin router was used to cut a sliding dovetail...
+    <div class="arrow down">↓</div>
+  </div>
+
+  <div class="frame"></div>
+  <div class="frame"></div>
+
+  <!-- STEP 3 (left → right) -->
+  <div class="frame">
+    <img src="images/legs-profiled.jpg" alt="">
+  </div>
+
+  <div class="frame text-center">
+    Which slid into a corresponding housing inside of the apron. A cope corresponding to the curved apron shape was cut with a large diameter drill bit.
+    <div class="arrow right">→</div>
+  </div>
+
+  <div class="frame">
+    <img src="images/legs-fitting.jpg" alt="">
+  </div>
+
+  <!-- STEP 4 -->
+  <div class="frame"></div>
+  <div class="frame"></div>
+
+  <div class="frame text-right">
+    Then the profile on the apron was cut by gradually raising a commonly available spindle molder bit already in the shop.
+    <div class="arrow down">↓</div>
+  </div>
+
+  <!-- STEP 5 (right → left, same as step 1) -->
+  <div class="frame">
+    <img src="images/xiangji-assembled.jpg" alt="">
+  </div>
+
+  <div class="frame text-center">
+    The bottom frame was mitered and shaped, and a separate jig was made to profile the mitered feet, which were simply glued onto the base.
+    <div class="arrow left">←</div>
+  </div> 
+
+  <div class="frame">
+    <img src="images/spindle-molder-shaping.jpg" alt="">
+  </div>
+</section>
+
+</body>
+</html>

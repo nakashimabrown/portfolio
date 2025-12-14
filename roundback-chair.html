@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Roundback Chair</title>
+
+<!-- Inter Typeface -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+<style>
+
+body {
+  margin: 32px;
+  font-family: "Inter", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.55;
+  color: #000;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* ---------- GRID ---------- */
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+  margin-bottom: 72px;
+}
+
+/* ---------- FRAMES ---------- */
+
+.frame {
+  aspect-ratio: 1 / 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+/* ---------- HEADER ---------- */
+
+.project-title {
+  grid-column: 2;
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+}
+
+.subtitle {
+  font-size: 0.75rem;
+  font-weight: 300;
+  margin-top: 6px;
+  opacity: 0.8;
+}
+
+.project-meta {
+  grid-column: 2;
+  text-align: center;
+  font-size: 0.8rem;
+  font-weight: 300;
+}
+
+.hero {
+  grid-column: 3;
+}
+
+.description {
+  grid-column: 3;
+  font-size: 0.85rem;
+  font-weight: 300;
+  text-align: right;
+}
+
+/* ---------- TEXT FRAMES ---------- */
+
+.frame.text-left,
+.frame.text-center,
+.frame.text-right {
+  padding: 14%;
+  font-size: 1.05rem;
+  font-weight: 300;
+  line-height: 1.55;
+}
+
+.text-left { text-align: left; }
+.text-center { text-align: center; }
+.text-right { text-align: right; }
+
+/* ---------- ARROWS (TEXT ONLY) ---------- */
+
+.arrow {
+  position: absolute;
+  font-size: 1rem;
+  font-weight: 300;
+  opacity: 0.35;
+  pointer-events: none;
+}
+
+/* horizontal */
+.arrow.left {
+  left: 8%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.arrow.right {
+  right: 8%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* vertical */
+.arrow.down {
+  bottom: 8%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* ---------- BACK ---------- */
+
+.back {
+  text-align: right;
+  margin-bottom: 48px;
+  font-size: 0.8rem;
+  font-weight: 300;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="back">
+  <a href="index.html">← back</a>
+</div>
+
+<!-- ---------- HEADER ---------- -->
+
+<section class="grid">
+
+  <div></div>
+
+  <div class="project-title frame">
+    <div>
+      Roundback Chair
+      <div class="subtitle">Solo project</div>
+    </div>
+  </div>
+
+  <div class="frame hero">
+    <img src="images/roundback-chair-group.jpg" alt="Two Sets of Parts">
+  </div>
+
+  <div></div>
+
+  <div class="project-meta frame">
+    Designed and built by<br>
+    Hugo Nakashima-Brown
+  </div>
+
+  <div class="frame description">
+    Based on Ming Chinese chairs and full of complications in design and construction, this chair is probably the most difficult of my designs to build, as well as one of the more elegant.
+  </div>
+
+</section>
+
+<!-- ---------- PROCESS ---------- -->
+
+<section class="grid">
+
+  <!-- STEP 1 (right → left, arrows on text only) -->
+  <div class="frame">
+    <img src="images/roundback-chair-square-mortise.jpg" alt="Square Mortise">
+  </div>
+
+  <div class="frame text-center">
+    The chair features an refined pegged scarf joint to connect the five pieces of the crest rail...
+    <div class="arrow left">←</div>
+  </div>
+
+  <div class="frame">
+    <img src="images/roundback-scarf-joint.JPG" alt="Scarf Joint">
+  </div>
+
+  <!-- STEP 2 -->
+  <div class="frame text-left">
+    front and rear posts that continue through the seat with puzzle-like interlocking joinery...
+    <div class="arrow down">↓</div>
+  </div>
+
+  <div class="frame"></div>
+  <div class="frame"></div>
+
+  <!-- STEP 3 (left → right) -->
+  <div class="frame">
+    <img src="images/crest-rail-cope.jpg" alt="Coping 1">
+  </div>
+
+  <div class="frame text-center">
+    before continuing up to precisely cope into the crest rail...
+    <div class="arrow right">→</div>
+  </div>
+
+  <div class="frame">
+    <img src="images/undercarriage-cope.jpg" alt="Coping 2">
+  </div>
+
+  <!-- STEP 4 -->
+  <div class="frame"></div>
+  <div class="frame"></div>
+
+  <div class="frame text-right">
+    mitered brackets, and mitered and coped through tenons.
+    <div class="arrow down">↓</div>
+  </div>
+
+  <!-- STEP 5 (right → left, same as step 1) -->
+  <div class="frame">
+    <img src="images/roundback-chair-unfinished.jpg" alt="Before Finish">
+  </div>
+
+  <div class="frame text-center">
+    Most of this joinery is on a compound angle, adding greatly to the complexity, but worthwhile for the subtle angling of all parts giving a gracious sense of refinement. 
+    <div class="arrow left">←</div>
+  </div>
+
+  <div class="frame">
+    <img src="images/pommel-detail.jpg" alt="Pommel Detail">
+  </div>
+</section>
+
+</body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Hugo Nakashima-Brown</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <style>
+    body {
+      margin: 32px;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
+                   Helvetica, Arial, sans-serif;
+      font-size: 15px;
+      line-height: 1.4;
+      color: #000;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .container {
+      max-width: 900px;
+    }
+
+    .header {
+      margin-bottom: 48px;
+    }
+
+    .name {
+      font-size: 1rem;
+      margin-bottom: 4px;
+    }
+
+    .meta {
+      font-size: 0.85rem;
+      margin-bottom: 16px;
+    }
+
+    .section {
+      margin-bottom: 32px;
+    }
+
+    .section-title {
+      font-size: 0.85rem;
+      margin-bottom: 8px;
+    }
+
+    .project {
+      margin-bottom: 6px;
+    }
+  </style>
+</head>
+
+<body>
+
+<div class="container">
+
+  <div class="header">
+    <div class="name">hugo nakashima-brown</div>
+    <div class="meta">
+      designer, educator<br>
+      boston, ma<br>
+      <a href="mailto:nakashima.brown@gmail.com">nakashima.brown@gmail.com</a>
+    </div>
+    <div class="meta">
+      <a href="info.html">info</a>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-title">production</div>
+
+    <div class="project">
+      <a href="yuanjiaogui.html">yuanjiaogui cabinet</a>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-title">advanced craft</div>
+  </div>
+
+  <div class="section">
+    <div class="section-title">surfaces</div>
+  </div>
+
+  <div class="section">
+    <div class="section-title">folk + ecology</div>
+  </div>
+
+</div>
+
+</body>
+</html>

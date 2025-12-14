@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Andrew Table</title>
+
+<!-- Inter Typeface -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+<style>
+
+body {
+  margin: 32px;
+  font-family: "Inter", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.55;
+  color: #000;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* ---------- GRID ---------- */
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+  margin-bottom: 72px;
+}
+
+/* ---------- FRAMES ---------- */
+
+.frame {
+  aspect-ratio: 1 / 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+/* ---------- HEADER ---------- */
+
+.project-title {
+  grid-column: 2;
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+}
+
+.subtitle {
+  font-size: 0.75rem;
+  font-weight: 300;
+  margin-top: 6px;
+  opacity: 0.8;
+}
+
+.project-meta {
+  grid-column: 2;
+  text-align: center;
+  font-size: 0.8rem;
+  font-weight: 300;
+}
+
+.hero {
+  grid-column: 3;
+}
+
+.description {
+  grid-column: 3;
+  font-size: 0.85rem;
+  font-weight: 300;
+  text-align: right;
+}
+
+/* ---------- TEXT FRAMES ---------- */
+
+.frame.text-left,
+.frame.text-center,
+.frame.text-right {
+  padding: 14%;
+  font-size: 1.05rem;
+  font-weight: 300;
+  line-height: 1.55;
+}
+
+.text-left { text-align: left; }
+.text-center { text-align: center; }
+.text-right { text-align: right; }
+
+/* ---------- ARROWS (TEXT ONLY) ---------- */
+
+.arrow {
+  position: absolute;
+  font-size: 1rem;
+  font-weight: 300;
+  opacity: 0.35;
+  pointer-events: none;
+}
+
+/* horizontal */
+.arrow.left {
+  left: 8%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.arrow.right {
+  right: 8%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* vertical */
+.arrow.down {
+  bottom: 8%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* ---------- BACK ---------- */
+
+.back {
+  text-align: right;
+  margin-bottom: 48px;
+  font-size: 0.8rem;
+  font-weight: 300;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="back">
+  <a href="index.html">← back</a>
+</div>
+
+<!-- ---------- HEADER ---------- -->
+
+<section class="grid">
+
+  <div></div>
+
+  <div class="project-title frame">
+    <div>
+      Splay Legged Table
+      <div class="subtitle">Solo project <br> An exploration of contemporary Ming furniture <br> Cut entirely using a small hobbyist's tablesaw</div>
+    </div>
+  </div>
+
+  <div class="frame hero">
+    <img src="images/Andrew-Table-1.jpg" alt="Splay Legged Table">
+  </div>
+
+  <div></div>
+
+  <div class="project-meta frame">
+    Designed and built by<br>
+    Hugo Nakashima-Brown
+  </div>
+
+  <div class="frame description">
+    This table was the first piece inspired by Ming Furniture that I designed and built, increasing splay and cantilever and using a slab top, as opposed to the traditional frame and panel.
+    It was built this was to suggest the timelessness of Ming design with a few tweaks for more contemporary taste, while still using traditonal joinery but only cut by machines available in any garage shop. 
+    I recently rebuilt this table with Fine Woodworking over a three day shoot to popularize making such joinery, which is usually viewed through a mystified lens as unapproachable, to become another, non-Eurocentric part of makers' toolkits.
+  </div>
+
+</section>
+
+<!-- ---------- PROCESS ---------- -->
+
+<section class="grid">
+
+  <!-- STEP 1 (right → left, arrows on text only) -->
+  <div class="frame">
+    <img src="images/Ming-table-joint-og.jpg" alt="">
+  </div>
+
+  <div class="frame text-center">
+    The joinery was cut using a simple tablesaw jig with a flat top blade, giving zero clearance cuts to line up your parts and set stops if preferred, using the tablesaw almost like traditional hand tools. Angles of any degree could be easily screwed on as needed.
+    <div class="arrow left">←</div>
+  </div>
+
+  <div class="frame">
+    <img src="images/ming-tablesaw-cut.gif" alt="">
+  </div>
+
+  <!-- STEP 2 -->
+  <div class="frame text-left">
+    Leading to a joint with perfect clearances that is tight when assembled but easily disassembleable for moving and shipping.
+    <div class="arrow down">↓</div>
+  </div>
+
+  <div class="frame"></div>
+  <div class="frame"></div>
+
+  <!-- STEP 3 (left → right) -->
+  <div class="frame">
+    <img src="images/routing-leg.gif" alt="">
+  </div>
+
+  <div class="frame text-center">
+    After all, sustainability is more about long lasting, responsive design, than about miracle materials that can never fix a cycle of endless consumption. Ming furniture lasted 500 years, and this should too.
+    <div class="arrow right">→</div>
+  </div>
+
+  <div class="frame">
+    <img src="images/Andrew-Table-closeup.jpg" alt="">
+  </div>
+
+</section>
+
+</body>
+</html>

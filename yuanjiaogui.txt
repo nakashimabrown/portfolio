@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Yuanjiaogui Cabinet</title>
+
+  <style>
+    body {
+      margin: 20px;
+      font-family: serif;
+      line-height: 1.4;
+    }
+
+    /* ---------- HEADER ---------- */
+
+    .project-header {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 24px;
+      margin-bottom: 60px;
+    }
+
+    .project-title {
+      grid-column: 2;
+      text-align: center;
+      font-size: 1rem;
+    }
+
+    .project-meta {
+      grid-column: 2;
+      text-align: center;
+      font-size: 0.85rem;
+    }
+
+    .hero-image {
+      grid-column: 3;
+    }
+
+    .hero-image img {
+      width: 100%;
+      display: block;
+    }
+
+    .project-description {
+      grid-column: 3;
+      font-size: 0.85rem;
+    }
+
+    /* ---------- PROCESS GRID ---------- */
+
+    .process {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 24px;
+    }
+
+    .process img {
+      width: 100%;
+      display: block;
+    }
+
+    .center-text {
+      text-align: center;
+      font-size: 0.85rem;
+    }
+
+    .left-text {
+      text-align: left;
+      font-size: 0.85rem;
+    }
+
+    .right-text {
+      text-align: right;
+      font-size: 0.85rem;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- BACK LINK -->
+  <p style="text-align:right;">
+    <a href="index.html">← back</a>
+  </p>
+
+  <!-- HEADER -->
+  <header class="project-header">
+    <div class="project-title">
+      Yuanjiaogui Cabinet
+    </div>
+
+    <div class="project-meta">
+      Solo project
+    </div>
+
+    <div class="hero-image">
+      <img src="images/yuanjiaogui.gif" alt="Yuanjiaogui cabinet">
+    </div>
+
+    <div></div>
+    <div></div>
+
+    <div class="project-description">
+      Contemporary interpretation of the Yuanjiaogui cabinet,
+      exploring proportion, movement, and traditional Chinese joinery
+      through full-scale prototyping.
+    </div>
+  </header>
+
+  <!-- PROCESS -->
+  <main class="process">
+
+    <!-- STEP 1 -->
+    <img src="images/yuanjiaogui-joint.jpg" alt="">
+    <div class="center-text">
+      Initial joint studies, tested assembled and apart to understand
+      tolerance and movement.
+    </div>
+    <img src="images/yuanjiaogui-joint-assembled.jpg" alt="">
+
+    <!-- STEP 2 -->
+    <div class="left-text">
+      Historical research into Ming-dynasty cabinet construction
+      informed proportion and sequencing.
+    </div>
+    <img src="images/yuanjiaogui-drawing.jpg" alt="">
+    <div></div>
+
+    <!-- STEP 3 -->
+    <img src="images/yuanjiaogui-cnc.gif" alt="">
+    <div class="center-text">
+      CNC-cut test components used to rapidly iterate joinery geometry.
+    </div>
+    <img src="images/yuanjiaogui-test-fit.jpg" alt="">
+
+    <!-- STEP 4 -->
+    <div class="left-text">
+      Final assembly emphasized controlled friction and rhythmic motion.
+    </div>
+    <img src="images/yuanjiaogui-final-detail.jpg" alt="">
+    <div></div>
+
+  </main>
+
+</body>
+</html>
