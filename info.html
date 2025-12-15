@@ -20,7 +20,8 @@ body {
 
 a {
   color: inherit;
-  text-decoration: none;
+  text-decoration: underline;
+  text-underline-offset: 2px;
 }
 
 .back {
@@ -56,6 +57,7 @@ li {
   padding: 6px 12px;
   border: 1px solid #000;
   font-size: 0.75rem;
+  text-decoration: none;
 }
 
 /* grid */
@@ -68,6 +70,12 @@ li {
 
 .column section {
   margin-bottom: 32px;
+}
+
+.legend {
+  font-size: 0.75rem;
+  margin-bottom: 10px;
+  opacity: 0.8;
 }
 </style>
 </head>
@@ -85,7 +93,7 @@ li {
     <section>
       <h1>hugo nakashima-brown (he/him)</h1>
 
-      <a class="cv-button" href="assets/Hugo_Nakashima-Brown_CV.pdf" target="_blank" rel="noopener">
+      <a class="cv-button" href="assets/hugo_nakashima-brown_cv.pdf" target="_blank" rel="noopener">
         download cv (pdf)
       </a>
 
@@ -126,12 +134,50 @@ li {
 
     <section>
       <h2>press — selected</h2>
+      <div class="legend">* author / ** artworks featured</div>
       <ul>
-        <li>** sampan / “hugo nakashima-brown joins joinery and innovation”</li>
-        <li>* fine woodworking / “cutting chinese joinery on the tablesaw”</li>
-        <li>* fine woodworking blog / “cutting large scale marquetry with the shaper origin”</li>
-        <li>* paklan / “what we don’t talk about in period furniture”</li>
-        <li>* paklan / “how to become a ming furniture maker by accident”</li>
-        <li>** penland school of craft newsletter / “remaking rembrandt”</li>
-        <li>** fine woodworking / “ming chinese round-back chair” / oct 2024</li>
-        <li>** monocle magazine / “north bennet st. school” / feb 20**
+        <li>** <a href="#">sampan</a> / “hugo nakashima-brown joins joinery and innovation”</li>
+        <li>* <a href="#">fine woodworking</a> / “cutting chinese joinery on the tablesaw”</li>
+        <li>* <a href="#">fine woodworking blog</a> / “cutting large scale marquetry with the shaper origin”</li>
+        <li>* <a href="#">paklan</a> / “what we don’t talk about in period furniture: the myth of western originality”</li>
+        <li>* <a href="#">paklan</a> / “how to become a ming furniture maker by accident”</li>
+        <li>** <a href="#">penland school of craft newsletter</a> / “remaking rembrandt”</li>
+        <li>** <a href="#">fine woodworking</a> / “ming chinese round-back chair” / oct 2024</li>
+        <li>** <a href="#">monocle magazine</a> / “north bennet st. school: keeping american craft alive” / feb 2024</li>
+        <li>** <a href="#">architectural digest mexico</a> / la casa de cristal</li>
+      </ul>
+    </section>
+  </div>
+
+  <!-- column 3: honors + talks -->
+  <div class="column">
+    <section>
+      <h2>honors + awards — selected</h2>
+      <ul>
+        <li>international furnishings and design foundation / tony torrice professional development grant</li>
+        <li>oak spring garden foundation / interdisciplinary residency / upperville, va</li>
+        <li>rhode island school of design / teaching + learning lab faculty fellow</li>
+        <li>rhode island school of design / color lab faculty fellow</li>
+        <li>center for furniture craftsmanship / endowed fellowship / rockland, me</li>
+        <li>penland school of craft / winter residency / bakersville, nc</li>
+        <li>winterthur museum / maker/creator fellowship / winterthur, de</li>
+        <li>mt. fuji wood culture society / artist in residence / kawaguchiko, japan</li>
+        <li>australian wood review / top 100 maker of the year / sydney, australia</li>
+        <li>rhode island school of design / becky westcott memorial scholarship</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>public presentations + invited lectures — selected</h2>
+      <ul>
+        <li>2025 / a2ru conference / speaker: “from tea bowls to sloyd knives” / university of madison, wi</li>
+        <li>2025 / the furniture society / panelist: “what’s next? exploring life after graduation” / online</li>
+        <li>2025 / vesterheim museum & folk school / speaker: “transplanted carving: how ming chinese furniture shaped anglo-american design” / online webinar</li>
+      </ul>
+    </section>
+  </div>
+
+</div>
+
+</body>
+</html>
