@@ -46,6 +46,18 @@ height: auto;
 display: block;
 }
 
+.hero figure {
+  margin: 0;
+}
+
+.hero figcaption {
+  margin-top: 8px;
+  font-size: 0.7rem;
+  font-weight: 300;
+  text-align: left;
+  opacity: 0.6;
+}
+
 /* ---------- TITLE ---------- */
 
 .title {
@@ -119,8 +131,16 @@ grid-template-columns: 1fr;
 <!-- HERO IMAGE (installation shot) -->
 
 <section class="hero">
-  <img src="images/yogini-install.jpg" alt="Yogini installation view">
+  <figure>
+    <img 
+      src="images/yogini-install.jpg" 
+      alt="Yogini from Hugo Nakashima-Brown: Familiar Faces | Living Spaces @ Harvard Crossings Gallery">
+    <figcaption>
+      Yogini from Hugo Nakashima-Brown: Familiar Faces | Living Spaces @ Harvard Crossings Gallery
+    </figcaption>
+  </figure>
 </section>
+
 
 <!-- IMAGE GALLERY -->
 
