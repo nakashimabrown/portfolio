@@ -165,12 +165,54 @@ a {
     height: auto;
   }
 
-  /* Normalize header elements */
+  body {
+    margin: 20px;
+    font-size: 15px;
+  }
+
+  /* One column everywhere */
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  /* Remove square forcing */
+  .frame {
+    aspect-ratio: auto;
+    display: block;
+  }
+
+  .frame img {
+    width: 100%;
+    height: auto;
+  }
+
+  /* Remove desktop column choreography */
   .project-title,
   .project-meta,
   .hero,
   .description {
-    grid-column: a
+    grid-column: auto;
+    text-align: left;
+  }
+
+  /* Header text should behave like content */
+  .project-title.frame,
+  .project-meta.frame,
+  .description.frame {
+    padding: 0;
+  }
+
+  .description {
+    font-size: 0.9rem;
+  }
+
+  /* Arrows are spatial cues — hide on mobile */
+  .arrow {
+    display: none;
+  }
+}
+
 @media (max-width: 768px) {
 
   body {
