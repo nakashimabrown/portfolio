@@ -176,6 +176,51 @@ a {
   text-underline-offset: 3px;
 }
 
+  @media (max-width: 768px) {
+
+  body {
+    margin: 20px;
+    font-size: 15px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .frame {
+    aspect-ratio: auto;
+  }
+
+  .frame img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+
+  /* Reset column-specific placement */
+  .project-title,
+  .project-meta,
+  .hero,
+  .description {
+    grid-column: auto;
+    text-align: left;
+  }
+
+  /* Text frames read better without heavy padding on mobile */
+  .frame.text-left,
+  .frame.text-center,
+  .frame.text-right {
+    padding: 0;
+    font-size: 0.95rem;
+  }
+
+  /* Arrows become visual noise on mobile */
+  .arrow {
+    display: none;
+  }
+
+}
 
 </style>
 </head>
