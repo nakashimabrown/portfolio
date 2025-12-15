@@ -140,6 +140,37 @@ a {
   font-weight: 300;
 }
 
+@media (max-width: 768px) {
+
+  body {
+    margin: 20px;
+    font-size: 15px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  /* Remove square forcing on mobile */
+  .frame {
+    aspect-ratio: auto;
+    display: block;
+  }
+
+  .frame img {
+    width: 100%;
+    height: auto;
+  }
+
+  /* Normalize header elements */
+  .project-title,
+  .project-meta,
+  .hero,
+  .description {
+    grid-column: a
+
+  
 </style>
 </head>
 
