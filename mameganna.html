@@ -2,6 +2,8 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Mameganna</title>
 
 <!-- Inter Typeface -->
@@ -167,6 +169,55 @@ a {
   margin-bottom: 48px;
   font-size: 0.8rem;
   font-weight: 300;
+}
+
+  @media (max-width: 768px) {
+
+  body {
+    margin: 20px;
+    font-size: 15px;
+  }
+
+  /* Single column */
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  /* Let frames size naturally */
+  .frame {
+    aspect-ratio: auto;
+    display: block;
+  }
+
+  .frame img {
+    width: 100%;
+    height: auto;
+  }
+
+  /* Undo desktop column choreography */
+  .project-title,
+  .project-meta,
+  .hero,
+  .description {
+    grid-column: auto;
+    text-align: left;
+  }
+
+  .project-title.frame,
+  .project-meta.frame,
+  .description.frame {
+    padding: 0;
+  }
+
+  .description {
+    font-size: 0.9rem;
+  }
+
+  /* Hide arrows on mobile */
+  .arrow {
+    display: none;
+  }
 }
 
 </style>
