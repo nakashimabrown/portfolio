@@ -187,15 +187,14 @@ a { color: inherit; text-decoration: none; }
     text-align: center;
   }
 
-  .frame.text-left,
-  .frame.text-center,
-  .frame.text-right {
-    padding: 0;
-    margin: 12px 0 24px;
-    font-size: 0.95rem;
-    line-height: 1.6;
-    text-align: center;
-  }
+ .frame.text,
+.frame.description {
+  padding: 0;
+  margin: 0 0 28px;
+  font-size: 0.95rem;
+  line-height: 1.65;
+  text-align: center;
+}
 
   .description {
     font-size: 0.9rem;
@@ -204,6 +203,25 @@ a { color: inherit; text-decoration: none; }
   .arrow {
     display: none;
   }
+  .grid {
+  justify-items: center;
+}
+
+.frame {
+  max-width: 560px;
+  width: 100%;
+}
+.frame.video {
+  aspect-ratio: auto;
+  padding: 0;
+}
+
+.frame.video iframe {
+  width: 100%;
+  height: auto;
+  min-height: 200px;
+}
+
 }
 </style>
 </head>
