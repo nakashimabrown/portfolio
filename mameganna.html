@@ -66,21 +66,13 @@ a {
   width: 100%;
   height: 100%;
   border: 0;
-}
-
-.frame.video iframe {
-  width: 100%;
-  height: 100%;
-  border: 0;
   filter: brightness(0.6);
 }
-
 
 /* span two columns for final video */
 .span-2 {
   grid-column: 2 / span 2;
 }
-
 
 /* ---------- HEADER ---------- */
 
@@ -132,7 +124,7 @@ a {
 .text-center { text-align: center; }
 .text-right { text-align: right; }
 
-/* ---------- ARROWS (TEXT ONLY) ---------- */
+/* ---------- ARROWS ---------- */
 
 .arrow {
   position: absolute;
@@ -142,7 +134,6 @@ a {
   pointer-events: none;
 }
 
-/* horizontal */
 .arrow.left {
   left: 8%;
   top: 50%;
@@ -155,7 +146,6 @@ a {
   transform: translateY(-50%);
 }
 
-/* vertical */
 .arrow.down {
   bottom: 8%;
   left: 50%;
@@ -171,50 +161,58 @@ a {
   font-weight: 300;
 }
 
-  @media (max-width: 768px) {
+/* ---------- MOBILE (OPTION B) ---------- */
+
+@media (max-width: 768px) {
 
   body {
     margin: 20px;
     font-size: 15px;
   }
 
-  /* Single column */
   .grid {
     grid-template-columns: 1fr;
     gap: 24px;
   }
 
-  /* Let frames size naturally */
   .frame {
-    aspect-ratio: auto;
     display: block;
+    aspect-ratio: auto;
+    text-align: center;
+  }
+
+  .frame:empty {
+    display: none;
   }
 
   .frame img {
     width: 100%;
     height: auto;
+    object-fit: cover;
   }
 
-  /* Undo desktop column choreography */
   .project-title,
   .project-meta,
   .hero,
   .description {
     grid-column: auto;
-    text-align: left;
+    text-align: center;
   }
 
-  .project-title.frame,
-  .project-meta.frame,
-  .description.frame {
+  .frame.text-left,
+  .frame.text-center,
+  .frame.text-right {
     padding: 0;
+    margin: 12px 0 24px;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    text-align: center;
   }
 
   .description {
     font-size: 0.9rem;
   }
 
-  /* Hide arrows on mobile */
   .arrow {
     display: none;
   }
@@ -238,7 +236,11 @@ a {
   <div class="project-title frame">
     <div>
       Mameganna
-      <div class="subtitle">Solo project <br> Inspired by the work of generations of craftspeople <br> 2024-ongoing </div>
+      <div class="subtitle">
+        Solo project<br>
+        Inspired by the work of generations of craftspeople<br>
+        2024–ongoing
+      </div>
     </div>
   </div>
 
@@ -255,8 +257,8 @@ a {
 
   <div class="frame description">
     How do you achieve a controlled surface texture on an inside, compound curve? One approach is a gouge, but a gouge has no fixed depth and therefore offers limited control as a repeatable variable. In contrast, historical Japanese woodworking employs the mameganna, or “bean plane”: a compound-curved plane for adjustable cutting depth directly to a fixed compound curvature within the tool geometry.
-<br><br>
-This allows subtle, consistent texturing as well as rough shaping, even within deeply concave forms such as the bowl of a spoon, and still operates as a highly efficient historical system—one that produces results at a speed equal to router tooling, but with greater surface finish and adjustability.
+    <br><br>
+    This allows subtle, consistent texturing as well as rough shaping, even within deeply concave forms such as the bowl of a spoon, and still operates as a highly efficient historical system—one that produces results at a speed equal to router tooling, but with greater surface finish and adjustability.
   </div>
 
 </section>
@@ -265,7 +267,6 @@ This allows subtle, consistent texturing as well as rough shaping, even within d
 
 <section class="grid">
 
-  <!-- STEP 1 (right → left, arrows on text only) -->
   <div class="frame">
     <img src="images/mame-ganna-bladeout.jpg" alt="">
   </div>
@@ -278,35 +279,24 @@ This allows subtle, consistent texturing as well as rough shaping, even within d
     <img src="images/mameganna-sole.jpg" alt="">
   </div>
 
-  <!-- STEP 2 -->
-  <div class="frame text-left">
+  <div class="frame text-center">
     After a blade and appropriate-sized piece of wood for the die are selected, a wedged opening must be cut and fitted to the gradually tapering shape of the blade.
-    <div class="arrow down">↓</div>
   </div>
 
-  <div class="frame"></div>
-  <div class="frame"></div>
-
-  <!-- STEP 3 (left → right) -->
   <div class="frame">
     <img src="images/mame-ganna-bladein.jpg" alt="">
   </div>
 
   <div class="frame text-center">
-    And a chatter free, glassy, and beautifully textured surface of consistant radius can be achieved.
-    <div class="arrow right">→</div>
+    And a chatter-free, glassy, and beautifully textured surface of consistent radius can be achieved.
   </div>
 
-<!-- FINAL VIDEO (spans two columns) -->
-<div class="frame video span-2">
-  <iframe
-    src="https://player.vimeo.com/video/1146406121?autoplay=1&loop=1&muted=1&background=1"
-    allow="autoplay; fullscreen; picture-in-picture">
-  </iframe>
-</div>
-
-
-
+  <div class="frame video">
+    <iframe
+      src="https://player.vimeo.com/video/1146406121?autoplay=1&loop=1&muted=1&background=1"
+      allow="autoplay; fullscreen; picture-in-picture">
+    </iframe>
+  </div>
 
 </section>
 
