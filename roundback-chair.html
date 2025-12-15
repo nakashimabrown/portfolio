@@ -51,6 +51,33 @@ a {
   display: block;
 }
 
+  /* ---------- HERO OVERLAY ---------- */
+
+.hero {
+  position: relative;
+}
+
+/* base image */
+.hero-main {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* inset image, registered top-left */
+.hero-inset {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  height: 100%;
+  width: auto;
+
+  object-fit: contain;
+  pointer-events: none;
+}
+
+
 /* ---------- HEADER ---------- */
 
 .project-title {
@@ -162,9 +189,20 @@ a {
     </div>
   </div>
 
-  <div class="frame hero">
-    <img src="images/roundback-chair-group.jpg" alt="Two Sets of Parts">
-  </div>
+ <div class="frame hero">
+  <img 
+    src="images/roundback-chair-group.jpg" 
+    alt="Two Sets of Parts"
+    class="hero-main"
+  >
+
+  <img 
+    src="images/roundback-chair.jpg" 
+    alt="Roundback Chair"
+    class="hero-inset"
+  >
+</div>
+
 
   <div></div>
 
